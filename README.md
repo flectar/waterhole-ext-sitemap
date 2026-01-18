@@ -10,7 +10,7 @@ This extension automatically generates SEO-compliant sitemaps for your community
 ### 🚀 Features
 
 - Zero configuration: Works out of the box.
-- Performance: Intelligent 24-hour caching prevents database load, even with thousands of posts.
+- Performance: 24-hour caching prevents database load, even with thousands of posts.
 - Segmented sitemaps: Separate endpoints for Posts, Channels, Pages, and Users.
 - SEO optimized: Includes `lastmod`, `changefreq`, and `priority` tags.
 - Safe: Read-only operation. Does not modify your database.
