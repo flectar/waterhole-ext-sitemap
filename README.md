@@ -15,14 +15,6 @@ This extension automatically generates SEO-compliant sitemaps for your community
 - SEO optimized: Includes `lastmod`, `changefreq`, and `priority` tags.
 - Safe: Read-only operation. Does not modify your database.
 
----
-
-### ⚠ Minimum Requirements
-
-- Flarum v1.8.0 or higher
-
----
-
 ### 📦 Installation
 
 Install via Composer. Run the following command in your Waterhole root directory:
