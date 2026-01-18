@@ -15,6 +15,8 @@ This extension automatically generates SEO-compliant sitemaps for your community
 - SEO optimized: Includes `lastmod`, `changefreq`, and `priority` tags.
 - Safe: Read-only operation. Does not modify your database.
 
+---
+
 ### 📦 Installation
 
 Install via Composer. Run the following command in your Waterhole root directory:
@@ -31,6 +33,35 @@ To update the extension, simply run:
 
 ```bash
 composer update flectar/waterhole-sitemap:"*"
+php artisan cache:clear
+```
+
+---
+
+### ⚙️ Usage
+
+Once installed, the sitemap is automatically available at:
+
+-   `https://your-domain.com/sitemap` (Index)
+-   `https://your-domain.com/sitemap/posts`
+-   `https://your-domain.com/sitemap/channels`
+-   `https://your-domain.com/sitemap/users`
+
+Robots.txt
+To ensure search engines find your sitemap, add the following line to your `public/robots.txt`:
+
+```bash
+Sitemap: https://your-domain.com/sitemap
+```
+---
+
+### 🔧 Configuration
+
+The sitemap is cached for 24 hours by default to ensure optimal performance.
+To force a refresh (e.g., after a large content import), run:
+
+```bash
+php artisan optimize
 php artisan cache:clear
 ```
 
